@@ -1,50 +1,66 @@
 <!DOCTYPE>
 <html>
+    <!-- BODY element should not be nested in HEAD -->
     <head>
-        <body>
-            <title>
-                Things I've Learned
-            </title>
-            
-            <h1>
-                Things I've Learned
-            </h1>
-            
-            <h2>Internet Basics</h2>
-            
-            <ol>
-                <li>HTTP Requests</li>
-                <li>IP Address</li>
-                <li>Servers</li>
-            </ol>
-            
-            <h2>HTML</h2>
-            
+            <!-- this is the default for html5, but it is no harm to state it -->
+            <meta charset="UTF-8">
+    </head>
+    <body>
+        <title>
+            Things I've Learned
+        </title>
+        
+        <h1>
+            Things I've Learned
+        </h1>
+        
+        <h2>Internet Basics</h2>
+        
+        <ol>
+            <li>HTTP Requests</li>
+            <li>IP Address</li>
+            <li>Servers</li>
+        </ol>
+        
+        <h2>HTML</h2>
+        
+        <ul>
+            <li>Stands for <strong>Hyper Test markup Language</strong></li>
+            <li>Lots of tags</li>
             <ul>
-                <li>Stands for <strong>Hyper Test markup Language</strong></li>
-                <li>Lots of tags</li>
-                <ul>
-                    <li>Boilerplate</li>
+                <li>Boilerplate</li>
+                <li>
                     <ol>
                         <li>doctype</li>
                         <li>HTML</li>
                         <li>Head</li>
-                        <ol>
-                            <li>Title</li>
-                        </ol>
+                        <li>
+                            <ol>
+                                <li>Title</li>
+                            </ol>
+                        </li>
                     <li>Body</li>
                     </ol>
-                    <li>Headings</li>
-                    <li>Paragraph</li>
-                    <li><em>em</em></li>
-                    <li><strong>Strong</strong></li>
-                </ul>
+                </li>
+                <li>Headings</li>
+                <li>Paragraph</li>
+                <li><em>em</em></li>
+                <li><strong>Strong</strong></li>
             </ul>
-           <p>
-            I Found this picture on google i am not sure where but here's a link <a href="http://www.google.ie">Google</a>
-           </p>
-           <img src="C:\Users\SimpleZDesktop\Pictures\DarkGreen.jpg">
-            
-        </body>
-    </head>
+        </ul>
+        <p>
+        <!-- that is just a link to google, not an image! -->
+        I Found this picture on google i am not sure where but here's a link <a href="http://www.google.ie">Google</a>
+        </p>
+        <!-- image src should use a relative link (if it is stored on the same server as
+            your html file), or a link to a resource accessible on the internet.
+            Note the use of the ALT tag
+        -->
+        <img src="images/philipp-henzler-411-unsplash.jpg" alt="Text that helps screen readers or non-graphical browsers, including web spiders">
+        <!-- or -->
+        <img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg" alt="New York city">
+
+        <img src="C:\Users\SimpleZDesktop\Pictures\DarkGreen.jpg">
+        
+    </body>
 </html>
