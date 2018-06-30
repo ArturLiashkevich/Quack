@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><!-- BODY should not be nested in the HEAD tag -->
     <body>
         <title>This is the title</title>
         <p>
@@ -10,14 +10,25 @@
             <blockquote>Block Quote</blockquote>
             <p>Block Quote Diffrance</p>
             
-            <hr></hr><!---This is a line across the page-->
+            <hr></hr><!---This is a line across the page--> <!-- you only need <hr> here -->
             <ul><em>List One</em></ul>
-            <ul><b>List two</b></ul>
-            <li><b>List Three</b></li>
+            <ul><b>List two</b></ul><!-- UL element should contain list elements (LI) -->
+            <li><b>List Three</b></li><!-- LI element should be wrapped in UL or OL -->
         
         </p>
+
+        <h2>Example of correct lists</h2>
+        <ul>
+            <li><em>List One</em></li>
+            <li><b>List two</b></li><!-- UL element should contain list elements (LI) -->
+            <li><b>List Three</b></li><!-- LI element should be wrapped in UL or OL -->
+        </ul>
         
-        
+        <l>
+            <li><em>List One</em></li>
+            <li><b>List two</b></li><!-- UL element should contain list elements (LI) -->
+            <li><b>List Three</b></li><!-- LI element should be wrapped in UL or OL -->
+        </ol>
         
     </body>    
 </head>
